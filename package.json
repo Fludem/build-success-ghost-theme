@@ -60,26 +60,64 @@
     ],
     "config": {
         "card_assets": true,
-        "posts_per_page": 15,
+        "posts_per_page": 12,
         "image_sizes": {
             "xxs": {
-                "width": 30
+                "width": 48
             },
             "xs": {
-                "width": 100
+                "width": 128
             },
-            "s": {
-                "width": 300
+            "sm": {
+                "width": 176
             },
-            "m": {
-                "width": 600
+            "md": {
+                "width": 320
             },
-            "l": {
-                "width": 1200
+            "ml": {
+                "width": 588
+            },
+            "lg": {
+                "width": 636
             },
             "xl": {
-                "width": 2000
+                "width": 1272
+            },
+            "xxl": {
+                "width": 2640
             }
+        },
+        "enable_search": {
+            "type": "boolean",
+            "default": true
+        },
+        "instagram_page": {
+            "type": "text",
+            "default": ""
+        },
+        "pinterest_page": {
+            "type": "text",
+            "default": ""
+        },
+        "x_page": {
+            "type": "text",
+            "default": ""
+        },
+        "youtube_page": {
+            "type": "text",
+            "default": ""
+        },
+        "facebook_page": {
+            "type": "text",
+            "default": ""
+        },
+        "linkedin_page": {
+            "type": "text",
+            "default": ""
+        },
+        "brand_accent_color": {
+            "type": "color",
+            "default": "#0071e3"
         }
     },
     "type": "module"
