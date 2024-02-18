@@ -1,0 +1,20 @@
+<div class="nav-logo-container">
+    <div class="nav-logo-inner">
+        {{#if @site.logo}}
+            <a href="{{@site.url}}">
+                <img
+                    class="nav-logo-img"
+                    src="{{@site.logo}}"
+                    alt="{{@site.title}}"
+                    width=""
+                    height=""
+                />
+            </a>
+        {{else}}
+            <a
+                class="nav-brand-text text-white text-xl font-bold"
+                href="{{@site.url}}"
+            >{{@site.title}}</a>
+        {{/if}}
+    </div>
+</div>
