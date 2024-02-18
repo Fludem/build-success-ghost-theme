@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --color-primary: var(--ghost-accent-color, #3eb0ef);
+}
+.nav-button {
+    @apply hidden lg:inline-block py-2 px-4 rounded-lg shadow text-sm font-medium text-white transition duration-200;
+}
