@@ -1,5 +1,5 @@
 <section class="overflow-hidden bg-neutral-800 border-b border-neutral-700">
-    <div class="container px-4 mx-auto">
+    <nav class="container px-2 md:px-6 lg:px-10 xl:px-14 2xl:px-16 mx-auto" aria-label="Main menu">
         <div class="flex items-center justify-between py-4">
             <div class="flex items-center gap-6">
                 <div
@@ -8,15 +8,11 @@
                         {{> logo }}
                 </div>
                 <ul class="hidden lg:flex items-center gap-8">
+                  {{#foreach navigation}}
                     <li
-                        class="hover:text-green-500 transition text-sm duration-200 text-neutral-300"
-                    ><a href="#">Features</a></li>
-                    <li
-                        class="hover:text-green-500 transition text-sm duration-200 text-neutral-300"
-                    ><a href="#">Features</a></li>
-                    <li
-                        class="hover:text-green-500 transition text-sm duration-200 text-neutral-300"
-                    ><a href="#">Features</a></li>
+                        class=""
+                    ><a class="hover:text-green-500 transition duration-200 text-sm {{#if current}} text-neutral-50 {{else}} text-neutral-300 {{/if}}" href='{{ url absolute='true' }}'>{{ label }}</a></li>
+                    {{/foreach}}
                 </ul>
             </div>
             <a
@@ -69,5 +65,5 @@
                 >Subscribe</a>
             </nav>
         </div>
-    </div>
+    </nav>
 </section>

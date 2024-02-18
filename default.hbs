@@ -10,14 +10,11 @@
     <title>{{meta_title}}</title>
 
     {{ghost_head}}
-    {{!-- Outputs important meta data and settings, should always be in <head> --}}
 
 </head>
 <body class="{{body_class}} bg-neutral-900">
-<div class="gh-viewport">
 
-{{> "layout/navigation"}} {{!-- partials/layout/navigation.hbs --}}
-
+{{navigation}}
 <main class="gh-main">
 
     {{{body}}}
@@ -25,8 +22,6 @@
 </main>
 
 {{> "layout/footer" }} {{!-- partials/layout/footer.hbs --}}
-
-</div>
 
 {{!-- <foot> --}}
 {{ghost_foot}}
