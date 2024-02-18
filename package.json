@@ -115,7 +115,11 @@
             "type": "text",
             "default": ""
         },
-        "brand_accent_color": {
+        "nav_button_color": {
+            "type": "color",
+            "default": "#0071e3"
+        },
+        "secondary_color": {
             "type": "color",
             "default": "#0071e3"
         }
